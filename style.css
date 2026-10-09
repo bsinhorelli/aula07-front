@@ -1,0 +1,58 @@
+#grad{
+    height: 200px;
+    width: 200px;
+    /* background-image: linear-gradient(45deg, blue, lightblue); */
+    background-image: radial-gradient(blue, purple);
+    border-radius: 50%;
+}
+
+div.vazio {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+}
+
+div.transforme {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    /* transition: all 1s; */
+}
+
+div.transforme:hover {
+    /* transform: translate(-10px); */
+    /* transform: rotate(360deg); */
+    /* transform: scale(2.2,2.2); */
+    transform: skew(10deg, 20deg);
+}
+
+div.transition {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transition: all 1s;
+}
+
+div.transition:hover {
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: cyan;
+
+}
+
+h1 {
+    font-size: 80px;
+    animation: aparecer 2s infinite ease-in-out;
+}
+@keyframes aparecer {
+    0%, 100% {opacity: 0;}
+    50% {opacity: 1;}   
+}
